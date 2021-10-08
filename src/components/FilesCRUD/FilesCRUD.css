@@ -1,0 +1,167 @@
+/************************ New folder ************************/
+
+.new-folder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.new-folder input{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    border: solid #bbb .1rem;
+    border-radius: .2rem;
+
+    width: 20rem;
+}
+
+.new-folder button {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding-block: .5rem;
+
+    width: 100%;
+}
+
+/*********************** New Document ***********************/
+
+.new-document {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding-block: 5rem;
+}
+
+.new-document input{
+    font-size: 1.5rem;
+    width: 30rem;
+}
+
+.new-document button {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding-block: .5rem;
+
+    width: 100%;
+}
+
+/*********************** Remove File ************************/
+
+#delete-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    padding-block: 2rem;
+}
+
+#delete-container h1 {
+    font-size: 1.5rem;
+}
+
+#delete-container div {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#delete-container div button {
+    font-size: 1.2rem;
+    width: 5rem;
+    padding-block: .5rem;
+}
+
+/************************ Share Public **************************/
+
+#share-public {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    padding-block: 2rem;
+}
+
+#share-public h1 {
+    font-size: 1.5rem;
+}
+
+#share-public div {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#share-public div button {
+    font-size: 1.2rem;
+    width: 5rem;
+    padding-block: .5rem;
+}
+
+/************************ Share Individual *************************/
+
+.share-individual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.users-list {
+    height: 15rem;
+    overflow-y: scroll;
+
+    border: solid #eee .1rem;
+    width: 80%;
+}
+
+.users-list[data-error] input {
+    border: solid .2rem #c92432;
+    color: #c92432;
+    background-color: #fffafa;
+    outline: none;
+}
+
+/* .users-list[data-error]::after {
+    content: attr(data-error);
+    color: #c92432;
+    font-size: .8rem;
+} */
+
+.users-list div:nth-child(odd) {
+    background-color: #eee;
+}
+
+.users-list div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+    font-size: 1.2rem;
+
+}
+
+.users-list div p {
+    margin: 0;
+}
+
+.share-individual-button {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.share-individual-button button {
+    font-size: 1.5rem;
+    padding-block: .5rem;
+    width: 20%;
+}

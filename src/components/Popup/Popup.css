@@ -1,0 +1,45 @@
+.overlay {
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, .20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup-container {
+    /* we should make the position relative, since we will add the close button which gonna have the position absolute to be positioned correctly */
+    position: relative;
+    background-color: white;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* width: 60%; */
+    padding: 4rem;
+}
+
+.close-button {
+    position: absolute;
+    top: 0rem;
+    left: 1.5rem;
+    padding: 0;
+    background: none;
+    border: none;
+
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.close-button:hover {
+    color: rgba(0, 0, 0, .50);
+}

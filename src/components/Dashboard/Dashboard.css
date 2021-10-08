@@ -1,0 +1,4 @@
+#dasboard {
+    display: flex;
+    flex-direction: column;
+}

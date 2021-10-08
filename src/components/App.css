@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+
+body {
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* There is a problem with the Cairo font password characters, they are look a little weird */
+/* so we made an exception when the placeholder not shown!! */
+input[type="password"]:not(:placeholder-shown) {
+    font-family: sans-serif;
+}
+
+i {
+    line-height: 0;
+}
+
+:root {
+    --main-color: #22577A;
+    --secondary-color: #5089C6;
+    --gray: #eee
+}

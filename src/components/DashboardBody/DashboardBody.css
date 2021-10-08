@@ -1,0 +1,273 @@
+#DashboardBady {
+    max-width: 100%;
+    padding-inline: 10%;
+}
+
+#tool-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 4rem 2rem;
+    padding: 1rem 2rem;
+
+    width: 100%;
+    font-size: 1.2rem;
+    border-bottom: solid #eee;
+}
+
+@media(max-width: 60em) {
+    #tool-bar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+#tool-bar p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#tool-bar input[type="text"] {
+    margin-inline: 2rem;
+    padding: .5rem;
+    border: solid .1rem #bbb;
+    border-radius: .2rem;
+    /* width: 100%; */
+}
+
+@media(min-width: 60em) {
+    #tool-bar input[type="text"] {
+        flex-grow: 1;
+    }
+}
+
+@media(max-width: 60em) {
+    #tool-bar input[type="text"] {
+        width: 100%;
+    }
+}
+
+.sort-by {
+    display: flex;
+}
+
+@media(max-width: 60em) {
+    .sort-by {
+        width: 100%;
+    }
+
+    .sort-by select {
+        flex-grow: 1;
+    }
+
+    .sort-by button {
+        padding: 0;
+        background-color: #eee;
+    }
+}
+
+#tool-bar div.files-proc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: auto;
+}
+
+@media(min-width: 60em) {
+    #tool-bar div.files-proc {
+        padding-right: .3rem;
+        border-right: solid #eee;
+    }
+}
+
+@media(max-width: 60em) {
+    #tool-bar div.files-proc {
+        width: 100%;
+    }
+}
+#tool-bar button {
+    background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    padding: 0;
+}
+
+#tool-bar button i {
+    padding: 0 .7rem;
+}
+
+#tool-bar .hover-btn:hover {
+    background-color: #eee;
+}
+
+#tool-bar select {
+    padding: .15rem .5rem;
+    border: solid #bbb .1rem;
+    border-radius: .2rem;
+}
+
+#tool-bar select:invalid {
+    color: rgba(0, 0, 0, .5);
+}
+
+#tool-bar select:invalid option {
+    color: black;
+}
+
+#arrow {
+    padding-inline: 1rem;
+    display: block;
+    transition: transform 200ms ease-out;
+}
+
+#arrow.rotate {
+    transform: rotate(180deg);
+    transition: transform 100ms ease-in;
+}
+
+#share-button {
+    position: relative;
+}
+
+#share-button #share-dropdown {
+    display: none;
+
+}
+
+#share-button:hover #share-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+
+    
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+
+    background-color: white;
+
+    border: solid #bbb .1rem;
+    border-radius: .2rem;
+
+    padding-bottom: 5rem;
+    z-index: 1;
+}
+
+#share-dropdown button {
+    width: 100%;
+    text-align: right;
+}
+
+#share-dropdown button:hover {
+    background-color: #eee;
+}
+
+#tool-bar button.requires-selection {
+    color: #bbb;
+    pointer-events: none;
+}
+
+/* ********************************************************************** */
+
+.file-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-inline: 1rem;
+}
+
+@media(max-width:60em) {
+    p.modified-date {
+        display: none;
+    }
+}
+
+.file-container:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.form-check-input {
+    margin: 0;
+}
+
+.file-container.selected {
+    background-color: rgba(80, 137, 198, .2);
+  }
+
+.file-container .file-icon {
+    color: #FACE7F;
+    margin: 1rem;
+}
+
+.file-container p {
+    margin-inline: 1rem;
+}
+
+.file-container .file-name {
+    margin-inline-end: auto;
+}
+
+.public-icon {
+    color: green;
+}
+
+.info-icon {
+    margin: 1rem;
+    position: relative;
+}
+
+.info-icon:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.info-btn {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* ************************************************************************** */
+.info-row {
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    border: solid #eee .1rem;
+}
+
+.info-row h1 {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    margin: 0;
+    width: 10rem;
+    height: 3.5rem;
+    background-color: #eee;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.info-row p {
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    margin: 0;
+}

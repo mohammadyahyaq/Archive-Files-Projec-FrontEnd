@@ -1,0 +1,103 @@
+#nav-container {
+    width: 100%;
+    min-height: 5rem;
+    padding-inline: 2rem;
+
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.icon {
+    color: white;
+    font-size: 2.5rem;
+    vertical-align: middle;
+}
+
+#nav-container h1 {
+    color: white;
+    font-size: 1.2rem;
+
+    margin-block: 0;
+    margin-inline-start: 1.4rem;
+    margin-inline-end: auto;
+}
+
+#log-out {
+    padding-inline: 1.5rem;
+    color: white;
+    font-size: 1.2rem;
+    height: 5rem;
+
+    background: none;
+    border: none;
+    margin: 0 1rem;
+}
+
+#log-out:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+@media(max-width: 60em) {
+    #nav-container {
+        padding: 0 .2rem;
+    }
+
+    #log-out, #nav-container h1 {
+        font-size: .8rem;
+    }
+
+    #log-out {
+        margin: 0;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+}
+
+#nav-container .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#nav-container a.dropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+#nav-container ul.dropdown-menu li:not(:last-child) {
+    border-bottom: solid #bbb .1rem;
+}
+
+#nav-container a.dropdown-item i {
+    font-size: 1.5rem;
+    margin-inline-end: .6rem;
+}
+
+#nav-container a.dropdown-item div {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-left: 1rem;
+}
+
+#nav-container a.dropdown-item p {
+    margin-block: 0;
+    font-size: .8rem;
+    line-height: 1.1rem;
+}
+
+.sender {
+    font-weight: bold;
+}
+
+.fileName {
+    color: rgba(0, 0, 0, .6);
+}
+
+#nav-container a.dropdown-item .btn {
+    padding: 0 .2rem;
+    margin-inline: .2rem;
+    font-size: .8rem;
+}
